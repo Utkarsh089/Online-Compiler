@@ -1,0 +1,86 @@
+<html>
+
+  <head>
+    <title>Online Compiler</title>
+    <style>
+      body {
+        background-color: #66ccff;
+      }
+      h1 {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .topDiv {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px 20px;
+        margin-top: 0px;
+      }
+      textarea {
+        width: 95%;
+        height: 250px;
+        margin-bottom: 25px;
+        margin-right: 70px;
+        margin-left: 20px;
+      }
+      #outputArea {
+        height: 150px;
+        background-color: black;
+        color: white;
+      }
+      select {
+        width: 100px;
+        height: 30px;
+        margin-top: 25px;
+      }
+      .bottomDiv {
+        width: 95%;
+        margin-left: 20px;
+      }
+      button {
+        background-color: #0066ff;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 4px;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <div class="topDiv">
+        <h1>Online Compiler</h1>
+        <select id="langId" name="langId">
+          <option value="7">C</option>
+          <option value="77">C++</option>
+          <option value="8">Java</option>
+          <option value="0">Python</option>
+          <option value="4">Javascript</option>
+        </select>
+      </div>
+
+      <div class="editorDiv">
+        <textarea id="textEditor" placeholder="type your code here..." ></textarea>
+      </div>
+
+      <div class="outputDiv">
+        <textarea id="outputArea" placeholder="OUTPUT:"></textarea>
+      </div>
+
+      <div class="bottomDiv">
+        <button id="compileButton" class="compile">Compile & Run</button>
+      </div>
+
+    </div>
+
+  </body>
+  
+  <script src="script.js"></script>
+
+</html>
